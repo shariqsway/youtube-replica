@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import { Sidebar, Videos } from "../components";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { Sidebar, Videos } from "../components";
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
@@ -38,13 +38,15 @@ const Feed = () => {
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
           variant="h4"
-          fontWeight="bold"
+          fontWeight={600}
+          fontFamily="Lexend Deca"
+          letterSpacing={-0.8}
           mb={2}
           sx={{
             color: "#fff",
           }}
         >
-          {selectedCategory} <span style={{ color: "#f31503" }}>Videos</span>
+          {selectedCategory} <span style={{ color: "#eb161e" }}>Videos</span>
         </Typography>
         <Videos videos={videos} />
       </Box>
