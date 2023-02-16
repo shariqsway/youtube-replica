@@ -17,12 +17,13 @@ const VideoCard = ({
 }) => {
   return (
     <Card
+      className="video-card"
       sx={{
         width: { xs: "100%", sm: "358px", md: "320px" },
         boxShadow: "none",
         borderRadius: 0,
-        color: "black",
-        backgroundColor: "black",
+        color: "#0f0f0f",
+        backgroundColor: "#0f0f0f",
       }}
     >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>

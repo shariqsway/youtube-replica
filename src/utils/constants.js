@@ -11,7 +11,7 @@ import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 
-export const logo = "https://cdn-icons-png.flaticon.com/512/3308/3308709.png";
+export const logo = "logo.png";
 
 export const categories = [
   { name: "New", icon: <HomeIcon /> },
@@ -27,6 +27,26 @@ export const categories = [
   { name: "Comedy", icon: <TheaterComedyIcon /> },
   { name: "Gym", icon: <FitnessCenterIcon /> },
   { name: "Crypto", icon: <DeveloperModeIcon /> },
+];
+
+export const recommendations = [
+  { name: "Java" },
+  { name: "Python" },
+  { name: "Ruby" },
+  { name: "Laravel" },
+  { name: "Django" },
+  { name: "Bootstrap" },
+  { name: "React" },
+  { name: "Drupal" },
+  { name: "Swift" },
+  { name: "Flutter" },
+  { name: "Android" },
+  { name: "Angular" },
+  { name: "JavaScript" },
+  { name: "TypeScript" },
+  { name: "Tailwind" },
+  { name: "Netlify" },
+  { name: "WordPress" },
 ];
 
 export const demoThumbnailUrl = "#";

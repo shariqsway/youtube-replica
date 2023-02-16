@@ -19,7 +19,7 @@ const Navbar = () => (
       to="/"
       style={{ display: "flex", alignItems: "center", marginLeft: 30 }}
     >
-      <img src={logo} alt="logo" height={45} />
+      <img src={logo} alt="logo" height={50} />
     </Link>
     <SearchBar />
   </Stack>
