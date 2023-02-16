@@ -21,27 +21,41 @@ const VideoCard = ({
         width: { xs: "100%", sm: "358px", md: "320px" },
         boxShadow: "none",
         borderRadius: 0,
+        color: "black",
+        backgroundColor: "black",
       }}
     >
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
           alt={snippet?.title}
-          sx={{ width: { xs: "100%", sm: "358px", md: "320px" }, height: 180 }}
+          sx={{
+            width: { xs: "100%", sm: "358px", md: "320px" },
+            height: 180,
+            borderRadius: 3,
+          }}
         />
       </Link>
       <CardContent
         sx={{
-          backgroundColor: "#1e1e1e",
-          height: "106px",
+          backgroundColor: "#0f0f0f",
+          height: "80px",
         }}
       >
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
-          <Typography variant="subtitle1" fontWeight="bold" color="#fff">
+          <Typography
+            variant="subtitle1"
+            fontWeight={500}
+            fontSize="15px"
+            letterSpacing={-0.8}
+            lineHeight={1.2}
+            marginBottom="5px"
+            color="#fff"
+            fontFamily="Lexend Deca"
+          >
             {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)}
           </Typography>
         </Link>
-
         <Link
           to={
             snippet?.channelId
@@ -51,7 +65,7 @@ const VideoCard = ({
         >
           <Typography variant="subtitle2" fontWeight="bold" color="gray">
             {snippet?.channelTitle || demoChannelTitle}
-            <CheckCircle sx={{ fontSize: 12, color: "gray", ml: "5px" }} />
+            <CheckCircle sx={{ fontSize: 12, color: "#a9a9a9", ml: "5px" }} />
           </Typography>
         </Link>
       </CardContent>

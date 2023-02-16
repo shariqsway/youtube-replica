@@ -14,12 +14,17 @@ const Feed = () => {
   }, [selectedCategory]);
 
   return (
-    <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
+    <Stack
+      sx={{
+        flexDirection: { sx: "column", md: "row" },
+        backgroundColor: "#0f0f0f",
+      }}
+    >
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "1px solid #3d3d3d",
           px: { sx: 0, md: 2 },
+          marginLeft: "30px",
         }}
       >
         <Sidebar
@@ -29,9 +34,10 @@ const Feed = () => {
         <Typography
           className="copyright"
           variant="body2"
+          fontFamily="Lexend Deca"
           sx={{ mt: 1.5, color: "#fff" }}
         >
-          Copyright 2023 Mohammad Shariq
+          Developed by Mohammad Shariq
         </Typography>
       </Box>
 
@@ -41,7 +47,9 @@ const Feed = () => {
           fontWeight={600}
           fontFamily="Lexend Deca"
           letterSpacing={-0.8}
-          mb={2}
+          mt={-1}
+          mb={6}
+          ml={2}
           sx={{
             color: "#fff",
           }}

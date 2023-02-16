@@ -10,12 +10,15 @@ const Navbar = () => (
     p={2}
     sx={{
       position: "sticky",
-      background: "#000",
+      background: "#0f0f0f",
       top: 0,
       justifyContent: "space-between",
     }}
   >
-    <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+    <Link
+      to="/"
+      style={{ display: "flex", alignItems: "center", marginLeft: 30 }}
+    >
       <img src={logo} alt="logo" height={45} />
     </Link>
     <SearchBar />

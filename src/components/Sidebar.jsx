@@ -9,6 +9,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
       height: {
         sx: "auto",
         md: "95%",
+        backgroundColor: "#0f0f0f",
       },
       flexDirection: { md: "column" },
     }}
@@ -18,7 +19,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
         className="category-btn"
         onClick={() => setSelectedCategory(category.name)}
         style={{
-          background: category.name === selectedCategory && "#eb161e",
+          background: category.name === selectedCategory && "#272727",
           color: "#fff",
           fontFamily: "Lexend Deca",
         }}
